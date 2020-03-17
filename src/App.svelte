@@ -1,15 +1,14 @@
 <script>
   import Pixel from './Pixel.svelte'
 
-	let activePixels = new Array(50);
-	let inactivePixels = new Array(50);
+  const dayOfYear = new Date().getDayOfYear()
 </script>
 
 <main>
-  {#each activePixels as pixel}
+  {#each Array(dayOfYear) as pixel}
     <Pixel active={true}/>
   {/each}
-  {#each inactivePixels as pixel}
+  {#each Array(365 - dayOfYear) as pixel}
     <Pixel active={false}/>
   {/each}
 </main>
