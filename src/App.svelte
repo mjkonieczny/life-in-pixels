@@ -1,12 +1,16 @@
 <script>
   import Pixel from './Pixel.svelte'
 
-	let pixels = new Array(50);
+	let activePixels = new Array(50);
+	let inactivePixels = new Array(50);
 </script>
 
 <main>
-  {#each pixels as pixel}
-    <Pixel/>
+  {#each activePixels as pixel}
+    <Pixel active={true}/>
+  {/each}
+  {#each inactivePixels as pixel}
+    <Pixel active={false}/>
   {/each}
 </main>
 

@@ -1,10 +1,22 @@
-<div/>
+<script>
+  export let active
+</script>
+
+<div class={active ? 'active box' : 'inactive box'}/>
 
 <style>
-  div {
-    background: red;
+  .box {
     height: 2em;
     width: 2em;
-    margin: 1em;
+    margin: 0.2em;
+  }
+  
+  .active {
+    background: red;
+  }
+  
+  .inactive {
+    background: white;
+    outline: 1px solid grey;
   }
 </style>
