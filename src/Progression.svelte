@@ -3,14 +3,15 @@
 
   export let total
   export let current
+  export let color
 </script>
 
 <div>
   {#each Array(current) as pixel}
-    <Pixel active={true}/>
+    <Pixel color={color}/>
   {/each}
   {#each Array(total - current) as pixel}
-    <Pixel active={false}/>
+    <Pixel color="white"/>
   {/each}
 </div>
 

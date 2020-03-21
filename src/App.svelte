@@ -7,8 +7,8 @@
 </script>
 
 <main>
-  <Progression total={83} current={yearOfLife - 1992} />
-  <Progression total={365} current={dayOfYear} />
+  <Progression total={83} current={yearOfLife - 1992} color="red"/>
+  <Progression total={365} current={dayOfYear} color="green" />
 </main>
 
 <style>
