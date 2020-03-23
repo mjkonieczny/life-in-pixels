@@ -9,10 +9,30 @@
 </script>
 
 <main>
-  <Progression total={83} current={yearOfLife - 1992} color="red"/>
-  <Progression total={365} current={dayOfYear} color="green" />
-  <Progression total={7} current={dayOfWeek} color="yellow" />
-  <Progression total={24} current={hours} color="blue" />
+  <Progression 
+    name="year of life"
+    total={83} 
+    current={yearOfLife - 1992} 
+    color="red"
+  />
+  <Progression
+    name="day of year"
+    total={365}
+    current={dayOfYear}
+    color="green"
+  />
+  <Progression
+    name="day of week"
+    total={7}
+    current={dayOfWeek}
+    color="yellow" 
+  />
+  <Progression
+    name="hour of day"
+    total={24}
+    current={hours}
+    color="blue" 
+  />
 </main>
 
 <style>
